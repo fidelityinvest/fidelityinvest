@@ -1,0 +1,9 @@
+{"level":"error","message":"Invalid login: 535 Authentication Failed","timestamp":"2023-11-19 08:02:10"}
+{"level":"error","message":"Invalid login: 535 Authentication Failed","timestamp":"2023-11-20 14:33:42"}
+{"level":"info","message":"Message sent: %s\", <19ff434a-b940-8603-9ca6-006ec8d75cbc@wallamcapital.com>","timestamp":"2023-11-20 16:10:19"}
+{"level":"info","message":"Message sent: %s\", <2834faa5-28e7-e366-1220-c28dd37847d5@wallamcapital.com>","timestamp":"2023-11-20 16:31:28"}
+{"level":"info","message":"Message sent: %s\", <2d34e774-406c-ef7b-1385-bc3ae2c2cb49@wallamcapital.com>","timestamp":"2023-11-20 16:35:53"}
+{"level":"error","message":"queryA EBADNAME not set","timestamp":"2024-05-30 05:48:14"}
+{"level":"error","message":"queryA EBADNAME not set","timestamp":"2024-05-30 05:48:29"}
+{"level":"error","message":"queryA EBADNAME not set","timestamp":"2024-06-04 07:31:44"}
+{"level":"error","message":"queryA EBADNAME not set","timestamp":"2024-06-04 07:34:38"}
