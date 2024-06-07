@@ -35,7 +35,7 @@ const Header = () => {
             className="font-bold text-3xl leading-[2.5rem] 
           sm:text-4xl sm:leading-[3rem] md:text-5xl md:leading-[4rem]"
           >
-            transfer, Invest, Borrow and grow your money with{" "}
+            Transfer, Invest, Borrow and grow your money with{" "}
             {company?.name}
           </h1>
 
