@@ -191,14 +191,13 @@ const Register = (props: RegisterProps) => {
           />
 
           <Select
-            searchable
             placeholder="Your Country"
             size="lg"
             value={inputs.country}
             onChange={(value: string) =>
               setInputs({ ...inputs, country: value })
             }
-            data={displayCountry}
+            data={displayCountry} 
           />
 
           <TextInput
