@@ -4,6 +4,7 @@ import useTheme from "@/components/hooks/useTheme";
 import { usePathname, useRouter } from "next/navigation";
 import React, { useState } from "react";
 
+
 const Navbar = () => {
   const pathName = usePathname();
   const router = useRouter();
@@ -40,50 +41,50 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between px-3 sm:px-10 shadow-lg py-3 rounded-md">
-      <div
-        onMouseEnter={() => setSpendHover(true)}
-        onMouseLeave={() => setSpendHover(false)}
-        style={{
-          color: getColor(pathName === "/home", spendHover),
-        }}
-        onClick={() => router.push("/home")}
-        className={`cursor-pointer text-base sm:text-lg 
-         select-none font-semibold`}
-      >
-        Spend
-      </div>
-
-      <div
-        onMouseEnter={() => setInvestHover(true)}
-        onMouseLeave={() => setInvestHover(false)}
-        style={{
-          color: getColor(
-            pathName.includes("/home/invest-and-earn"),
-            investHover
-          ),
-        }}
-        onClick={() => router.push("/home/invest-and-earn")}
-        className={`cursor-pointer text-base sm:text-lg 
-         select-none font-semibold`}
-      >
-        Invest And Earn
-      </div>
-
-      {company?.loan.status === "on" && (
         <div
-          onMouseEnter={() => setLoanHover(true)}
-          onMouseLeave={() => setLoanHover(false)}
+          onMouseEnter={() => setSpendHover(true)}
+          onMouseLeave={() => setSpendHover(false)}
           style={{
-            color: getColor(pathName === "/home/loan", loanHover),
+            color: getColor(pathName === "/home", spendHover),
           }}
-          onClick={() => router.push("/home/loan")}
+          onClick={() => router.push("/home")}
           className={`cursor-pointer text-base sm:text-lg 
          select-none font-semibold`}
         >
-          Get Loan
+          Spend
         </div>
-      )}
-    </div>
+
+        <div
+          onMouseEnter={() => setInvestHover(true)}
+          onMouseLeave={() => setInvestHover(false)}
+          style={{
+            color: getColor(
+              pathName.includes("/home/invest-and-earn"),
+              investHover
+            ),
+          }}
+          onClick={() => router.push("/home/invest-and-earn")}
+          className={`cursor-pointer text-base sm:text-lg 
+         select-none font-semibold`}
+        >
+          Invest And Earn
+        </div>
+
+        {company?.loan.status === "on" && (
+          <div
+            onMouseEnter={() => setLoanHover(true)}
+            onMouseLeave={() => setLoanHover(false)}
+            style={{
+              color: getColor(pathName === "/home/loan", loanHover),
+            }}
+            onClick={() => router.push("/home/loan")}
+            className={`cursor-pointer text-base sm:text-lg 
+         select-none font-semibold`}
+          >
+            Get Loan
+          </div>
+        )}
+      </div>
   );
 };
 

@@ -45,6 +45,7 @@ const Register = (props: RegisterProps) => {
     refUsername: refUsername?.toString().toLowerCase() || "",
     isSecure: true,
   });
+
   const [displayCountry, setDisplyCountry] = useState<
     { label: string; value: string }[]
   >([]);
